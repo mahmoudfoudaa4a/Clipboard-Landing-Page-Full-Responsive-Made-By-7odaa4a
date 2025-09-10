@@ -1,0 +1,374 @@
+/* ------- Globel Rules -------  */
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --radius: 25px;
+    --padding: 20px;
+    --margin: 15px;
+    --lh: 1.9;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+/* ------- Globel Rules -------  */
+body {
+    font-family: "Bai Jamjuree", sans-serif;
+}
+
+h1, h2{
+    color: hsl(210, 10%, 33%);
+    text-align: center;
+    font-size: 30px; 
+}
+h3 {font-size: 25px; color:hsl(210, 10%, 33%);}
+p {color: hsl(201, 11%, 66%); line-height: var(--lh); text-align: center;}
+
+.btn {
+    padding: 15px 70px;
+    margin-right: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    color: white;
+    border-radius: var(--radius);
+    transition: 0.4s ease-in-out;
+}
+
+.btn:nth-last-child(1) {
+    background-color: hsl(233, 100%, 69%);
+    box-shadow: 0 3px 0 0 rgb(80 99 221);
+}
+
+.btn:nth-last-child(2) {
+    background-color: hsl(171, 66%, 44%);
+    box-shadow: 0 3px 0 0 rgb(43 152 132);
+}
+
+.btn:hover {
+    color: rgb(228, 151, 10);
+    transform: scale(1.07);
+}
+
+/* ----- header start -----  */
+header {
+    background-image: url("../images/bg-header-mobile.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    padding:  calc(var(--padding) + 5px) var(--padding);
+}
+
+header img {
+    margin-top: 50px;
+    background: transparent;
+}
+.container {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+header h1 {
+    text-align: center;
+    width: 100%;
+}
+
+header p {
+    text-align: center;
+    line-height: var(--lh);
+    width: 310px;
+    margin-top: 10px;
+}
+
+
+/* ----- header end -----  */
+
+/* ----- cards section start ------ */
+.keep-track {
+    text-align: center;
+    padding: var(--padding);
+    
+}
+
+.keep-track .container p {margin-top: var(--margin);}
+
+.keep-track h2 {text-align: center; width: 300px;}
+
+.keep-track img {
+    width: 320px;
+    padding: 55px 10px;
+}
+
+.keep-track .content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1f));
+    margin-left: var(--margin);
+}
+
+.keep-track h3 {margin-bottom: var(--margin); font-weight: 600;}
+.keep-track .card {
+    padding: 20px 0;
+    width: 350px;
+}
+/* ----- cards section end ------ */
+
+/* ----- access clipboard start ------ */
+.access-clipboard {
+    padding: var(--padding);
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+.access-clipboard p {width: 310px; margin-top: var(--margin);}
+
+.access-clipboard h2 {width: 250px;}
+
+.access-clipboard img {
+    margin-top: 60px;
+    width: 350px;
+}
+/* ----- access clipboard end ------  */
+
+/* ----- supercharge start ----- */
+
+.supercharge .container h2 {margin-bottom: var(--margin);}
+
+.supercharge .container p  {width: 252px;}
+
+.supercharge .container { margin-bottom: 50px;}
+
+
+
+.supercharge .content .card i {
+    color: hsl(201, 11%, 66%);
+    font-size: 35px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.supercharge .content {
+    gap: 20px;
+    margin-bottom: 80px;
+}
+
+.supercharge .content .card {
+    flex-direction: column;
+    width: 356px;
+    gap: 20px;
+    padding: var(--padding);
+}
+
+/* ----- supercharge end ----- */
+
+/* ----- frameworks start ----- */
+
+.frameworks {
+    gap: 20px;
+    margin-bottom: 70px;
+}
+
+.frameworks img {
+    width: 278px;
+    padding: 50px;
+}
+
+/* ----- frameworks end ----- */
+
+/* ----- download sec start ------  */
+.download {
+    gap: 36px 4px;
+    padding: var(--padding);
+    margin-bottom: 100px;
+}
+
+.download .btn {transition: 0.3s ease-in-out;}
+.download .container h2 {
+    margin-bottom: var(--margin);
+}
+
+/* ----- download sec  end------  */
+/* ----- footer start ------ */
+
+.footer {
+  background-color: #f5f6f8;
+  padding: 40px 20px;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.footer-logo img {
+  width: 50px;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px 40px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li a {
+  text-decoration: none;
+  color: hsl(210, 10%, 33%);
+  font-weight: 400;
+  transition: 0.3s;
+}
+
+.footer-links li a:hover {
+  color: hsl(171, 66%, 44%);
+}
+
+.footer-social {
+  display: flex;
+  gap: 20px;
+  font-size: 22px;
+}
+
+.footer-social a {
+  color: hsl(210, 10%, 33%);
+  transition: 0.3s;
+}
+
+.footer-social a:hover {
+  color: hsl(233, 100%, 69%);
+}
+/* ----- footer end ------ */
+
+
+
+
+    /* Small Devices (موبايل كبير) */
+    @media (min-width: 576px) and (max-width: 767px) {
+
+        
+        .keep-track img {width: 416px;}
+        .keep-track .container p:nth-child(2) {
+            width: 410px;
+            text-align: center;
+    }
+
+    .access-clipboard img {width: 370px;}
+}
+    /* Medium Devices (تابلت) */
+    @media (min-width: 768px) and (max-width: 991px) {
+    header p {width: 549px;}
+
+
+    .keep-track {text-align: left;}
+    .keep-track img {width: 363px;}
+    .keep-track h2 {width: 100%;}
+    .keep-track .container p:nth-child(2) {
+        width: 631px;
+        text-align: center;
+    }
+    .keep-track .content .card p  {text-align: left;}
+
+    .access-clipboard img {width: 410px;}
+    .access-clipboard h2 {width: 393px;}
+
+}
+    /* Large Devices (لابتوب صغير / ديسكتوب صغير) */
+    @media (min-width: 992px) and (max-width: 1199px) {
+    header p {width: 549px;}
+    header {
+        background-image: url("../images/bg-header-desktop.png");
+    }
+
+
+    .keep-track {text-align: left;}
+    .keep-track img {width: 587px;}
+    .keep-track h2 {width: 396px;}
+    .keep-track .container p:nth-child(2) {width: 631px; text-align: center;}
+    .keep-track .content .card  {text-align: left;}
+
+    .access-clipboard img {width: 565px;}
+    .access-clipboard h2 {width: 393px;}
+
+    .supercharge {margin-top: 50px;}
+
+    .frameworks img {
+    width: 278px;
+    padding: 50px;
+}
+}
+    
+    /* Extra Large Devices (ديسكتوب) */
+    @media (min-width: 1200px) and (max-width: 1399px) {
+    header p {width: 549px;}
+    header {
+        background-image: url("../images/bg-header-desktop.png");
+    }
+
+
+
+    .keep-track {text-align: left;}
+    .keep-track img {width: 587px;}
+    .keep-track h2 {width: 396px;}
+    .keep-track .container p:nth-child(2) {
+        width: 631px;
+        text-align: center;
+    }
+    .keep-track .content .card  {text-align: left;}
+
+    .access-clipboard img {width: 612px;}
+    .access-clipboard h2 {width: 393px;}
+
+    .supercharge {margin-top: 50px;}
+
+    .frameworks img {
+    width: 278px;
+    padding: 50px;
+}
+    }
+    
+    /* Extra Extra Large Devices (شاشات كبيرة جدًا) */
+    @media (min-width: 1400px) {
+    header p {width: 549px;}
+    header {
+        background-image: url("../images/bg-header-desktop.png");
+    }
+
+    .keep-track {text-align: left;}
+    .keep-track img {width: 587px;}
+    .keep-track h2 {width: 396px;}
+    .keep-track .container p:nth-child(2) {
+        width: 631px;
+        text-align: center;
+    }
+    .keep-track .content .card  {text-align: left;}
+
+    .access-clipboard img {width: 699px;}
+    .access-clipboard h2 {width: 393px;}
+
+    .supercharge {margin-top: 50px;}
+
+    .frameworks img {
+    width: 278px;
+    padding: 50px;
+}
+    }
